@@ -10,6 +10,7 @@ export function Msg({
   user_names,
   user_img,
   des,
+  rating,
   deleteMovieButton,
   id,
   editMovieButton,
@@ -27,7 +28,15 @@ export function Msg({
         <img src={user_img} alt={user_names} />
       </div>
       <div className="movie_info">
-        <h1>{user_names}</h1>
+        <div className="movie-specs">
+          <h3 className="movie-name">{user_names}</h3>
+          <p className="movie-rating">
+            <span className="star" role="img" aria-label="star">
+              ⭐
+            </span>{" "}
+            {rating}
+          </p>
+        </div>
 
         <div className="edit_delete_icon">
           <IconButton
@@ -38,7 +47,7 @@ export function Msg({
               history.push("/movies/" + id);
             }}
           >
-            <InfoIcon />
+            <InfoIcon className="info-icon" />
           </IconButton>
           {editMovieButton}
           {deleteMovieButton}
@@ -48,7 +57,6 @@ export function Msg({
           <Counter />
           <IconButton
             aria-label="delete"
-            color="error"
             variant="contained"
             onClick={() => setShow(!show)}
           >

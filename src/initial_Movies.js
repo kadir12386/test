@@ -18,7 +18,7 @@ export const initial_Movies = [
     name: "M.S. Dhoni",
     pic: "https://m.media-amazon.com/images/M/MV5BZjAzZjZiMmQtMDZmOC00NjVmLTkyNTItOGI2Mzg4NTBhZTA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
     des: "M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.",
-    rating: "10",
+    rating: "7.9",
     trailer: "https://www.youtube.com/embed/6L6XqWoS8tw",
   },
   {
@@ -28,11 +28,18 @@ export const initial_Movies = [
     rating: "7.9",
     trailer: "https://www.youtube.com/embed/GR1EmTKAWIw",
   },
+  // {
+  //   name: "Avengers: Endgame",
+  //   pic: "https://images.moviesanywhere.com/4677177f6f0595289bc3e767e7b47459/1d6c6c73-ab1e-4453-969c-6a4e965ebb37.jpg",
+  //   rating: "8.4",
+  //   des: "On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars.",
+  //   trailer: "https://www.youtube.com/embed/TcMBFSGVi1c",
+  // },
   {
-    name: "Avengers: Endgame",
-    pic: "https://images.moviesanywhere.com/4677177f6f0595289bc3e767e7b47459/1d6c6c73-ab1e-4453-969c-6a4e965ebb37.jpg",
-    rating: "8.4",
-    des: "On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars.",
+    name: "127 Hours",
+    pic: "https://m.media-amazon.com/images/M/MV5BMTc2NjMzOTE3Ml5BMl5BanBnXkFtZTcwMDE0OTc5Mw@@._V1_.jpg",
+    rating: "7.5",
+    des: "Aron Ralston, a mountain climber, is on a hiking adventure in Utah when he gets trapped in a canyon. Soon, he takes desperate measures to survive and struggles for 127 hours before he is rescued.",
     trailer: "https://www.youtube.com/embed/TcMBFSGVi1c",
   },
 ];

@@ -28,6 +28,7 @@ export function MovieDetials() {
         <Button
           className="AddBtn"
           variant="contained"
+          color="success"
           onClick={() => history.goBack()}
           startIcon={<ArrowBackIcon />}
         >

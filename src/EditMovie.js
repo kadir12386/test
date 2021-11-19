@@ -20,7 +20,8 @@ export function EditMovie({ movies, setMovies }) {
   const [movieName, setMovieName] = useState(movie.name);
   const [moviePoster, setMoviePoster] = useState(movie.pic);
   const [moviedes, setMovieDes] = useState(movie.des);
-  const [movietrailer, setMovieTrailer] = useState(movie.trailer);
+  const [movierating, setMovieRating] = useState(movie.rating);
+  // const [movietrailer, setMovieTrailer] = useState(movie.trailer);
 
   const editMovie = () => {
     //Find the elememt And update the data
@@ -28,7 +29,8 @@ export function EditMovie({ movies, setMovies }) {
       name: movieName,
       pic: moviePoster,
       des: moviedes,
-      trailer: movietrailer,
+      rating: movierating,
+      // trailer: movietrailer,
     };
     let updatedMovies = [...movies]; //copy of the movie
     console.log("before", updatedMovies);
@@ -67,12 +69,19 @@ export function EditMovie({ movies, setMovies }) {
         onChange={(event) => setMovieDes(event.target.value)}
       />
       <TextField
+        label="movie Rating"
+        variant="outlined"
+        color="success"
+        value={movierating} //textbox ku values set pannuthu
+        onChange={(event) => setMovieRating(event.target.value)}
+      />
+      {/* <TextField
         label="movie trailer"
         variant="outlined"
         color="success"
         value={movietrailer} //textbox ku values set pannuthu
         onChange={(event) => setMovieTrailer(event.target.value)}
-      />
+      /> */}
 
       <button className="AddBtn" onClick={editMovie}>
         Edit movie

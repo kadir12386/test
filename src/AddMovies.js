@@ -8,14 +8,17 @@ export function AddMovies({ movies, setMovies }) {
   const [movieName, setMovieName] = useState("");
   const [moviePoster, setMoviePoster] = useState("");
   const [moviedes, setMovieDes] = useState("");
-  const [movietrailer, setMovieTrailer] = useState("");
+
+  const [movierating, setMovieRating] = useState("");
+  // const [movietrailer, setMovieTrailer] = useState("");
 
   const addMovie = () => {
     const newMovie = {
       name: movieName,
       pic: moviePoster,
       des: moviedes,
-      trailer: movietrailer,
+      rating: movierating,
+      // trailer: movietrailer,
     };
     // console.log([...movies, newMovie], newMovie);
     setMovies([...movies, newMovie]);
@@ -29,7 +32,7 @@ export function AddMovies({ movies, setMovies }) {
       <TextField
         className="TextField"
         label="Movie name"
-        color="info"
+        color="success"
         variant="outlined"
         value={movieName} //textbox ku values set pannuthu
         onChange={(event) => setMovieName(event.target.value)}
@@ -38,7 +41,7 @@ export function AddMovies({ movies, setMovies }) {
       <TextField
         label="Movie Poster"
         variant="outlined"
-        color="info"
+        color="success"
         value={moviePoster} //textbox ku values set pannuthu
         onChange={(event) => setMoviePoster(event.target.value)}
       />
@@ -46,17 +49,24 @@ export function AddMovies({ movies, setMovies }) {
       <TextField
         label="Movie des"
         variant="outlined"
-        color="info"
+        color="success"
         value={moviedes} //textbox ku values set pannuthu
         onChange={(event) => setMovieDes(event.target.value)}
       />
       <TextField
+        label="movie Rating"
+        variant="outlined"
+        color="success"
+        value={movierating} //textbox ku values set pannuthu
+        onChange={(event) => setMovieRating(event.target.value)}
+      />
+      {/* <TextField
         label="movie trailer"
         variant="outlined"
         color="info"
         value={movietrailer} //textbox ku values set pannuthu
         onChange={(event) => setMovieTrailer(event.target.value)}
-      />
+      /> */}
 
       <button className="AddBtn" onClick={addMovie}>
         Add Moive

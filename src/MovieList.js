@@ -18,11 +18,12 @@ export function MovieList({ movies, setMovies }) {
                 <IconButton
                   aria-label="Info about movie"
                   variant="contained"
+                  // color="success"
                   onClick={() => {
                     history.push("/movies/edit/" + index);
                   }}
                 >
-                  <EditIcon />
+                  <EditIcon className="info-icon" />
                 </IconButton>
               }
               deleteMovieButton={
@@ -39,13 +40,14 @@ export function MovieList({ movies, setMovies }) {
                   aria-label="delete"
                   color="error"
                 >
-                  <DeleteIcon />
+                  <DeleteIcon className="delete-icon" />
                 </IconButton>
               }
               key={index}
               user_names={el.name}
               user_img={el.pic}
               des={el.des}
+              rating={el.rating}
               id={index}
             />
           </div>
