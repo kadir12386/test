@@ -40,6 +40,6 @@ export const initial_Movies = [
     pic: "https://m.media-amazon.com/images/M/MV5BMTc2NjMzOTE3Ml5BMl5BanBnXkFtZTcwMDE0OTc5Mw@@._V1_.jpg",
     rating: "7.5",
     des: "Aron Ralston, a mountain climber, is on a hiking adventure in Utah when he gets trapped in a canyon. Soon, he takes desperate measures to survive and struggles for 127 hours before he is rescued.",
-    trailer: "https://www.youtube.com/embed/TcMBFSGVi1c",
+    trailer: "https://www.youtube.com/embed/OlhLOWTnVoQ",
   },
 ];
