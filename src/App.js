@@ -46,7 +46,7 @@ export default function App() {
                   width="70"
                 />
               </Link>
-              <Link to="/Home">Home</Link>
+              <Link to="/">Home</Link>
               <Link to="/movie">Movies</Link>
               <Link to="/Add-movie">Add Movies</Link>
               <Link to="/color">Color games</Link>
@@ -64,13 +64,16 @@ export default function App() {
           {/* ========= Switch ============== */}
 
           <Switch>
+            <Route exact path="/">
+              Welcome to the pages
+            </Route>
             <Route path="/movies/edit/:id">
               <EditMovie movies={movies} setMovies={setMovies} />
             </Route>
             <Route path="/movies/:id">
               <MovieDetials />
             </Route>
-            <Route path="/Home">Welcome to the pages</Route>
+
             <Route path="/Add-movie">
               <AddMovies movies={movies} setMovies={setMovies} />
             </Route>
