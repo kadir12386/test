@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 
@@ -10,6 +10,10 @@ export function Counter() {
   // easy way to do the function here Follow this
   const increamentLike = () => SetLike(like + 1);
   const increamentDislike = () => SetDislike(dislike + 1);
+
+  useEffect(() => {
+    console.log("the updated like value", like);
+  }, [like]);
   const styles = {
     color: "black",
   };
