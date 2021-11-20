@@ -15,16 +15,11 @@ import { initial_Movies } from "./initial_Movies";
 import { getFromStorage, updateStoreMovies } from "./getFromStorage";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-// import Theme from "./Theme";
 import Button from "@mui/material/Button";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-// import TheatersIcon from "@mui/icons-material/Theaters";
 
 updateStoreMovies(initial_Movies);
-
-// localStorage.setItem("movies", JSON.stringify(initial_Movies));
-
 export default function App() {
   const [movies, setMovies] = useState(getFromStorage("movies"));
   const [darkMode, setDarkMode] = useState(false);
